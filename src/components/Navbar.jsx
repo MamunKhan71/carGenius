@@ -4,7 +4,7 @@ const Navbar = () => {
     const navlink = <div className="flex items-center gap-8 text-lg font-inter">
         <NavLink to={`/`}>Home</NavLink>
         <NavLink to={`/`}>About</NavLink>
-        <NavLink to={`/`}>Services</NavLink>
+        <NavLink to={`/services`}>Services</NavLink>
         <NavLink to={`/`}>Blog</NavLink>
         <NavLink to={`/`}>Contact</NavLink>
     </div>
