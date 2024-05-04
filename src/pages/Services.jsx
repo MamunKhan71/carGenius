@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Services = () => {
     return (
         <div>
@@ -175,7 +177,7 @@ const Services = () => {
                         </div>
                     </div>
                     <h1 className="text-4xl font-bold text-[#151515]">Price $250.00</h1>
-                    <button className="bg-primary text-white text-xl font-bold btn w-full">Proceed Checkout</button>
+                    <Link to={`/checkout`} className="bg-primary text-white text-xl font-bold btn w-full">Proceed Checkout</Link>
                 </div>
             </div>
         </div>
