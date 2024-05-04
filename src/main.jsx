@@ -7,14 +7,17 @@ import "./index.css";
 import routes from "./router/routes";
 import AuthProvider from "./providers/AuthProvider";
 import ContentProvider from "./providers/ContentProvider";
+import { QueryClient, QueryClientProvider } from 'react-query'
 
-
+const queryClient = new QueryClient()
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <AuthProvider>
-      <ContentProvider>
-        <RouterProvider router={routes} />
-      </ContentProvider>
+      <QueryClientProvider client={queryClient}>
+        <ContentProvider>
+          <RouterProvider router={routes} />
+        </ContentProvider>
+      </QueryClientProvider>
     </AuthProvider>
   </React.StrictMode>
 ); 
