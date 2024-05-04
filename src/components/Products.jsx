@@ -10,12 +10,14 @@ const Products = () => {
     }
     return (
         <div>
-            <div className="text-center">
-                <p className="text-primary font-bold text-xl">Popular Products</p>
-                <h1 className="text-[#151515] font-bold text-2xl">Browse Our Products</h1>
-                <p className="text[#737373] text-base">the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+            <div className="text-center space-y-6">
+                <div className="space-y-4">
+                    <p className="text-primary font-bold text-xl">Popular Products</p>
+                    <h1 className="text-[#151515] font-bold text-2xl">Browse Our Products</h1>
+                    <p className="text[#737373] text-base px-96">The majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+                </div>
                 <div className="space-y-12">
-                    <div className="card w-96 bg-base-100 shadow-xl p-6 hover:transform hover:scale-105 transition ease-in-out hover:cursor-pointer">
+                    <div className="mt-24 card w-96 bg-base-100 shadow-xl p-6 hover:transform hover:scale-105 transition ease-in-out hover:cursor-pointer">
                         <div className='flex flex-col items-center justify-center '>
                             <figure><img className="rounded-xl w-48 h-auto" src="/src/assets/images/products/6.png" /></figure>
                             <div className="card-body px-0 text-center items-center">
